@@ -359,6 +359,10 @@ var (
 	// Marks tests of KEP-4427 that require the `RelaxedDNSSearchValidation` feature gate
 	RelaxedDNSSearchValidation = framework.WithFeature(framework.ValidFeatures.Add("RelaxedDNSSearchValidation"))
 
+	// Owner: sig-auth
+	// Enables dynamic reloading of client CA in kubelet's TLS config.
+	ReloadKubeletClientCAFile = framework.WithFeature(framework.ValidFeatures.Add("ReloadKubeletClientCAFile"))
+
 	// Owner: sig-node
 	// resource health Status for device plugins and DRA <https://kep.k8s.io/4680>
 	ResourceHealthStatus = framework.WithFeature(framework.ValidFeatures.Add("ResourceHealthStatus"))
